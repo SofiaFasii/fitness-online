@@ -34,7 +34,6 @@ body {
   padding: 0 23px;
   min-width: 320px;
   max-width: 1140px;
-  backgroundl: #8d6969b2;
 }
 .section-title {
   padding-top: 50px;
@@ -59,6 +58,9 @@ body {
 .header {
   background: var(--color-basic);
 }
+.navbar-nav {
+  background: none;
+}
 ul {
   gap: 25px;
 }
@@ -67,17 +69,28 @@ ul {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  color: var(--color-white);
 }
 .navbar-toggler {
   padding: 0;
   border: none;
 }
-.offcanvas-header{
+.offcanvas-header {
   background: #6f36ba94;
 }
-.offcanvas-body{
-  background: #6f36bad2;
+.offcanvas-body {
+}
+.intro{
+  height: 805px;
+}
+.col-left {
+  width: 100%;
+  background: #7036ba;
+}
+.col-right {
+  height: 100%;
+  background-image: url(./src/img/photo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .about-us {
   min-height: 631px;
@@ -140,7 +153,143 @@ ul {
   justify-content: center;
   padding-top: 50px;
 }
+.pricing {
+  padding-bottom: 50px;
+  background: var(--color-basic);
+}
+.price-card {
+  padding: 10px;
+  height: 405px;
+  border-radius: 5px;
+  background: var(--color-lite-accent);
+  color: var(--color-white);
+}
+.price-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+.price-list {
+  height: 190px;
+  padding-left: 20px;
+}
+.list-text {
+  font-size: 18px;
+  font-weight: 400;
+  list-style: url();
+  background-repeat: no-repeat;
+}
+.price-box {
+  padding-top: 55px;
+}
+.price-text {
+  padding-bottom: 30px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.price-span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.price-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid;
+  width: 132px;
+  height: 55px;
+  color: var(--color-white);
+  background: none;
+}
+.clients-feedback {
+  padding-bottom: 50px;
+}
+.faq {
+  background: var(--color-basic);
+}
+.accordion-faq {
+  padding-bottom: 50px;
+}
+.accordion-item {
+  --bs-accordion-border-color: none;
+  --bs-accordion-bg: none;
+}
+.accordion-button {
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-white) !important;
+  background: var(--color-basic) !important;
+}
+.accordion-button::after {
+  background-image: url(./src/img/arrow-accordion.svg) !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-collapse {
+  margin-top: -20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-white) !important;
+  background: var(--color-basic) !important;
+}
+.list-marker {
+  margin-right: 8px;
+}
+.training {
+  padding-bottom: 50px;
+}
+.training-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 25px 0 50px 0;
+  color: var(--color-main-text);
+}
 
+.training-label {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-main-text);
+}
+.label-title {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  color: var(--color-main-text);
+}
+.training-input {
+  max-width: 540px;
+  min-width: 330px;
+  padding: 10px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid var(--color-hint-text);
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.checkbox-input {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-hint-text);
+}
+.checkbox-label {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: var(--color-main-text);
+}
+.traning-btn {
+  display: flex;
+  justify-content: center;
+}
 .footer {
   background: var(--color-basic);
 }
@@ -163,4 +312,7 @@ ul {
   font-weight: 400;
   text-decoration: none;
   color: var(--color-white);
+}
+
+@media (min-width: 992px) {
 }
