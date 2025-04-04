@@ -56,6 +56,9 @@ body {
   color: var(--color-white);
 }
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   background: var(--color-basic);
 }
 .navbar-nav {
@@ -79,26 +82,55 @@ ul {
 }
 .offcanvas-body {
 }
-.intro{
-  height: 805px;
-}
-.col-left {
+.intro {
   width: 100%;
-  background: #7036ba;
+  height: 805px;
+  color: var(--color-white);
+  background: #00000096;
 }
-.col-right {
-  height: 100%;
-  background-image: url(./src/img/photo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+.www {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: var(--color-basic);
 }
-.about-us {
-  min-height: 631px;
-  max-height: 1163px;
+
+.intro-content {
+  max-width: 1140px;
+  height: 500px;
+  background: #a89797;
 }
-.row {
-  margin-top: 50px;
-  gap: 30px;
+.left-col {
+  max-width: 960px;
+  height: 429px;
+  background: var(--color-lite-accent);
+}
+.rrr {
+  height: 327px;
+}
+.right-col {
+  max-width: 960px;
+  max-height: 800px;
+  background: #635970;
+}
+.intro-title{
+  padding: 35px 0 25px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.intro-text{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.intro-btn{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+.about-us-title{
+  padding-bottom: 50px;
 }
 .start {
   background: var(--color-basic);
@@ -202,7 +234,35 @@ ul {
   background: none;
 }
 .clients-feedback {
+  color: var(--color-main-text);
   padding-bottom: 50px;
+}
+.item-box {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+  padding: 70px 50px 0;
+}
+.item-content {
+}
+.item-photo {
+  height: 100px;
+}
+.content-text {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.item-link {
+  color: var(--color-lite-accent);
+  text-decoration: none;
+}
+.item-icon {
+  padding-right: 4px;
+}
+.item-text {
+  font-size: 18px;
+  font-weight: 400;
 }
 .faq {
   background: var(--color-basic);
@@ -314,5 +374,14 @@ ul {
   color: var(--color-white);
 }
 
+@media (min-width: 376px) {
+  .rrr{
+    height: 327px;
+  }
+}
+
 @media (min-width: 992px) {
+  .rrr{
+    height: 805px;
+  }
 }
